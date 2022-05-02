@@ -26,16 +26,16 @@ USE DATABASE frisbeegolfkisat;
 
 CREATE TABLE Kilpailusarja
 (
-  Ika 					    INT,
-  pdgaRating 			  VARCHAR(25),
-  Sukupuoli 			  VARCHAR(25),
-  KilpailusarjaID 	INT NOT NULL,
+  Ika INT,
+  pdgaRating VARCHAR(25),
+  Sukupuoli VARCHAR(25),
+  KilpailusarjaID INT NOT NULL,
   PRIMARY KEY (KilpailusarjaID)
 );
 
 CREATE TABLE SponsoriTyyppi
 (
-  SponsoriTyyppiID 			INT,
+  SponsoriTyyppiID INT,
   PRIMARY KEY (SponsoriTyyppiID)
 );
 
