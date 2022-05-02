@@ -1,4 +1,6 @@
-Yksinkertainen ja pienehkö tietokanta -projekti frisbeegolf kisoista. Kuvitteelliset pelaajat, oikeat sponsorit ja pelipaikat.
+## <ins>Johdanto</ins>
+
+Yksinkertainen ja pienehkö tietokanta -projekti frisbeegolf kisoista. Kuvitteelliset pelaajat, oikeat sponsorit ja pelipaikat. Tietokannan ohjelmistot, joita käytin projektissa, olivat [HeidiSQL](https://www.heidisql.com/) ja [MariaDB](https://mariadb.org/).
 
 #### <ins>ER- ja relaatiokaavio</ins>
 
@@ -14,5 +16,5 @@ Yksinkertainen ja pienehkö tietokanta -projekti frisbeegolf kisoista. Kuvitteel
 
 Alapuolella on sekä kyselyt tietokannan toimivuutta varten, että skripti tietokannan luontia varten. 
 
-* [](Misc/Tietokanta.sql)
-* [](Misc/Kyselyt.sql)
+* [Tietokanta](Misc/Tietokanta.sql)
+* [Kyselyt](Misc/Kyselyt.sql)
