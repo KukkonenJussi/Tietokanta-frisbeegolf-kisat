@@ -11,6 +11,9 @@ Ohjeet tietokannan käyttöönottoa varten:
 
 Copyright: Jussi Kukkonen
 Päivämäärä 15.3.2021
+
+Tietokanta frisbeegolf kisoista, jossa pelaajien tiedot ovat kuvitteellisia, mutta sponsorit ja kilpailupaikat ovat oikeita, nykymaailmasta löytyviä. Käytetty seuraavia ohjelmia: MariaDB ja MySQL.
+
 */
 
 DROP DATABASE Frisbeegolfkisat;
@@ -23,9 +26,9 @@ USE DATABASE frisbeegolfkisat;
 
 CREATE TABLE Kilpailusarja
 (
-  Ika 					INT,
-  pdgaRating 			VARCHAR(25),
-  Sukupuoli 			VARCHAR(25),
+  Ika 					    INT,
+  pdgaRating 			  VARCHAR(25),
+  Sukupuoli 			  VARCHAR(25),
   KilpailusarjaID 	INT NOT NULL,
   PRIMARY KEY (KilpailusarjaID)
 );
@@ -39,8 +42,8 @@ CREATE TABLE SponsoriTyyppi
 CREATE TABLE Kilpailu
 (
   Kilpailupvm 			DATE,
-  Rata 					VARCHAR(50),
-  KilpailuID 			INT NOT NULL,
+  Rata 					    VARCHAR(50),
+  KilpailuID 			  INT NOT NULL,
   KilpailusarjaID 	INT NOT NULL,
   PRIMARY KEY (KilpailuID),
   FOREIGN KEY (KilpailusarjaID) REFERENCES Kilpailusarja(KilpailusarjaID)
@@ -48,9 +51,9 @@ CREATE TABLE Kilpailu
 
 CREATE TABLE Sponsori
 (
-  SponsoriID 			INT NOT NULL,
+  SponsoriID 			  INT NOT NULL,
   Sponsori_nimi 		VARCHAR(25),
-  Sponsori_maa 		VARCHAR(25),
+  Sponsori_maa 		  VARCHAR(25),
   SponsoriTyyppiID 	INT,
   PRIMARY KEY (SponsoriID),
   FOREIGN KEY (SponsoriTyyppiID) REFERENCES SponsoriTyyppi(SponsoriTyyppiID)
@@ -68,8 +71,8 @@ CREATE TABLE Sponsoroida
 CREATE TABLE Kilpailija
 (
   KilpailijaID 	INT NOT NULL,
-  Maa 				VARCHAR(25),
-  Ika 				INT,
+  Maa 				  VARCHAR(25),
+  Ika 				  INT,
   Kilpailutaso 	VARCHAR(25),
   Sukupuoli 		VARCHAR(25),
   Etunimi 			VARCHAR(25),
