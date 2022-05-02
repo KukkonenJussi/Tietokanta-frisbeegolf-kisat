@@ -41,28 +41,28 @@ CREATE TABLE SponsoriTyyppi
 
 CREATE TABLE Kilpailu
 (
-  Kilpailupvm 			DATE,
-  Rata 					    VARCHAR(50),
-  KilpailuID 			  INT NOT NULL,
-  KilpailusarjaID 	INT NOT NULL,
+  Kilpailupvm DATE,
+  Rata VARCHAR(50),
+  KilpailuID INT NOT NULL,
+  KilpailusarjaID INT NOT NULL,
   PRIMARY KEY (KilpailuID),
   FOREIGN KEY (KilpailusarjaID) REFERENCES Kilpailusarja(KilpailusarjaID)
 );
 
 CREATE TABLE Sponsori
 (
-  SponsoriID 			  INT NOT NULL,
-  Sponsori_nimi 		VARCHAR(25),
-  Sponsori_maa 		  VARCHAR(25),
-  SponsoriTyyppiID 	INT,
+  SponsoriID INT NOT NULL,
+  Sponsori_nimi VARCHAR(25),
+  Sponsori_maa VARCHAR(25),
+  SponsoriTyyppiID INT,
   PRIMARY KEY (SponsoriID),
   FOREIGN KEY (SponsoriTyyppiID) REFERENCES SponsoriTyyppi(SponsoriTyyppiID)
 );
 
 CREATE TABLE Sponsoroida
 (
-  SponsoriID 		INT NOT NULL,
-  KilpailuID 		INT NOT NULL,
+  SponsoriID INT NOT NULL,
+  KilpailuID INT NOT NULL,
   PRIMARY KEY (SponsoriID, KilpailuID),
   FOREIGN KEY (SponsoriID) REFERENCES Sponsori(SponsoriID),
   FOREIGN KEY (KilpailuID) REFERENCES Kilpailu(KilpailuID)
@@ -70,24 +70,24 @@ CREATE TABLE Sponsoroida
 
 CREATE TABLE Kilpailija
 (
-  KilpailijaID 	INT NOT NULL,
-  Maa 				  VARCHAR(25),
-  Ika 				  INT,
-  Kilpailutaso 	VARCHAR(25),
-  Sukupuoli 		VARCHAR(25),
-  Etunimi 			VARCHAR(25),
-  Sukunimi 			VARCHAR(25),
-  SponsoriID 		INT NOT NULL,
+  KilpailijaID INT NOT NULL,
+  Maa VARCHAR(25),
+  Ika INT,
+  Kilpailutaso VARCHAR(25),
+  Sukupuoli VARCHAR(25),
+  Etunimi VARCHAR(25),
+  Sukunimi VARCHAR(25),
+  SponsoriID INT NOT NULL,
   PRIMARY KEY (KilpailijaID),
   FOREIGN KEY (SponsoriID) REFERENCES Sponsori(SponsoriID)
 );
 
 CREATE TABLE Osallistuu
 (
-  Tulos 				INT,
-  Sijoitus 			INT,
-  KilpailuID 		INT NOT NULL,
-  KilpailijaID 	INT NOT NULL,
+  Tulos INT,
+  Sijoitus INT,
+  KilpailuID INT NOT NULL,
+  KilpailijaID INT NOT NULL,
   PRIMARY KEY (KilpailuID, KilpailijaID),
   FOREIGN KEY (KilpailuID) REFERENCES Kilpailu(KilpailuID),
   FOREIGN KEY (KilpailijaID) REFERENCES Kilpailija(KilpailijaID)
