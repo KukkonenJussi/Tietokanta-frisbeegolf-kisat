@@ -113,15 +113,15 @@ INSERT INTO Sponsori (SponsoriID, Sponsori_nimi, Sponsori_maa, SponsoriTyyppiID)
 
 INSERT INTO sponsoroida (SponsoriID, KilpailuID) VALUES (1, 1);
 
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (1, 'Finland', 21, 'pro', 'male', 'Oliver', 'Kulmala', 5); 		-- sponsorisopimustyyppi 1 (jatkosopimus)
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (2, 'USA', 23, 'pro', 'male', 'Donald', 'Thrussell', 3);				-- sponsorisopimustyyppi 1 
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (1, 'Finland', 21, 'pro', 'male', 'Oliver', 'Kulmala', 5); -- sponsorisopimustyyppi 1 (jatkosopimus)
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (2, 'USA', 23, 'pro', 'male', 'Donald', 'Thrussell', 3); -- sponsorisopimustyyppi 1 
 INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (3, 'Finland', 18, 'pro', 'male', 'Ransu', 'Tuominen', 5);	-- sponsorisopimustyyppi 3 (promosopimus)
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (4, 'USA', 35, 'pro', 'male', 'Koby', 'Moore', 4);				-- sponsorisopimustyyppi 2 (siirtosopimus)
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (5, 'Estonia', 23, 'pro', 'male', 'Tanel', 'Pärn', 1);			-- sponsorisopimustyyppi 1
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (6, 'Finland', 21, 'pro', 'female', 'Vilhemiina', 'Jokela', 2);	-- sponsorisopimustyyppi 1
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (7, 'USA', 30, 'pro', 'female', 'Emely', 'Tracy', 4);			-- sponsorisopimustyyppi 1
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (8, 'Estonia', 28, 'pro', 'female', 'Veronika', 'Mägi', 1);	-- sponsorisopimustyyppi 1
-INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (9, 'USA', 36, 'pro', 'female', 'Alysha', 'Cooper', 5);			-- sponsorisopimustyyppi 1
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (4, 'USA', 35, 'pro', 'male', 'Koby', 'Moore', 4);	-- sponsorisopimustyyppi 2 (siirtosopimus)
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (5, 'Estonia', 23, 'pro', 'male', 'Tanel', 'Pärn', 1);	-- sponsorisopimustyyppi 1
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (6, 'Finland', 21, 'pro', 'female', 'Vilhemiina', 'Jokela', 2); -- sponsorisopimustyyppi 1
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (7, 'USA', 30, 'pro', 'female', 'Emely', 'Tracy', 4); -- sponsorisopimustyyppi 1
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (8, 'Estonia', 28, 'pro', 'female', 'Veronika', 'Mägi', 1); -- sponsorisopimustyyppi 1
+INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (9, 'USA', 36, 'pro', 'female', 'Alysha', 'Cooper', 5); -- sponsorisopimustyyppi 1
 INSERT INTO Kilpailija (KilpailijaID, Maa, Ika, Kilpailutaso, Sukupuoli, Etunimi, Sukunimi, SponsoriID) VALUES (10, 'USA', 19, 'pro', 'female', 'Clementine', 'Benton', 6);	-- sponsorisopimustyyppi 1
 
 INSERT INTO Osallistuu (Tulos, Sijoitus, KilpailuID, KilpailijaID) VALUES (-35, 2, 1, 1);
