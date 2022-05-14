@@ -1,20 +1,21 @@
-## <ins>Johdanto</ins>
+# <ins>Introduction</ins>
 
-Yksinkertainen ja pienehkö tietokanta -projekti frisbeegolf kisoista. Kuvitteelliset pelaajat, oikeat sponsorit ja pelipaikat. Tietokannan ohjelmistot, joita käytin projektissa, olivat [HeidiSQL](https://www.heidisql.com/) ja [MariaDB](https://mariadb.org/).
+A simple and smaller database project about disc golf. Imaginary players, real sponsors and venues. The database software I used in the project was [HeidiSQL](https://www.heidisql.com/) and [MariaDB](https://mariadb.org/).
 
-#### <ins>ER- ja relaatiokaavio</ins>
 
-![ER-kaavio](Misc/ER%20-kaavio.PNG)
+### <ins>Entity relation scheme and relation scheme</ins>
 
-- - -
-
-![Relaatiokaavio](Misc/Relaatiokaavio.PNG)
+![](Misc/ER%20-kaavio.PNG)
 
 - - -
 
-#### <ins>SQL -skripti</ins>
+![](Misc/Relaatiokaavio.PNG)
 
-Alapuolella on sekä kyselyt tietokannan toimivuutta varten, että skripti tietokannan luontia varten. 
+- - -
 
-* [Tietokanta](Misc/Tietokanta.sql)
-* [Kyselyt](Misc/Kyselyt.sql)
+### <ins>SQL -script</ins>
+
+Below are both queries for database functionality and a script for database creation. 
+
+* [Database](Misc/Tietokanta.sql)
+* [Queries](Misc/Kyselyt.sql)
